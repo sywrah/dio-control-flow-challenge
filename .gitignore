@@ -1,0 +1,54 @@
+# Arquivos e diretórios gerados pela IDE IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Diretórios de compilação
+/out/
+build/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Arquivos de configuração do IntelliJ
+/.idea/*
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/gradle.xml
+/.idea/dictionaries
+/.idea/libraries
+
+# Cache do IntelliJ
+/.idea/modules.xml
+/.idea/vcs.xml
+
+# Para projetos Gradle
+.gradle/
+/build/
+
+# Para projetos Maven
+target/
+
+# Dependências do Maven
+**/dependency-reduced-pom.xml
+**/release.properties
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Arquivos de sistema do MacOS
+.DS_Store
+
+# Logs de execução
+*.log
+
+# Arquivos de configuração local
+*.env
+*.properties
