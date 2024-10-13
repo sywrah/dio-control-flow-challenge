@@ -12,12 +12,20 @@ public class Counter {
         System.out.println("Digite o segundo parâmetro: ");
         int parameterTwo = terminal.nextInt();
 
-        count(parameterOne, parameterTwo);
+        try {
+            count(parameterOne, parameterTwo);
+
+        }catch (InvalidParametersException exception) {
+            System.out.println("Exceção capturada: " + exception.getMessage());
+        }
+
 
     }
 
-    static void count(int parameterOne, int parameterTwo ){
-        //validar se parametroUm é MAIOR que parametroDois e lançar a exceção
+    static void count(int parameterOne, int parameterTwo) throws InvalidParametersException{
+        if (parameterOne >= parameterTwo){
+            throw new InvalidParametersException("O valor do Parâmetro 1 DEVE ser MENOR que o valor do Parâmetro 2.");
+        }
         int countLimit = parameterTwo - parameterOne;
         for (int i = 1; i < countLimit; i++){
             System.out.println("Imprimindo o número " + i);
